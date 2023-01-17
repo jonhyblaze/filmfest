@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+/* * Global Styles */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,4 +21,33 @@ a {
 
 ul, li {
   list-style: none;
+}
+
+/* * Typography */
+
+h1 {
+  font-size: 4rem;
+  width: 50%;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 65px;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 44px;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
 }

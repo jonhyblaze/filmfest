@@ -29,22 +29,84 @@
   width: 100%;
 }
 
-
-
 .title {
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
+  gap: 1rem;
   
 }
-.title > h1 {
-  font-size: 4rem;
-  width: 50%;
-  font-weight: 700;
-  line-height: 130%;
+
+.content {
+  background: black;
+  width: 100%;
+  padding: 120px 220px 120px 220px;
+  height: fit-content;
 }
 
-.title > div
+.program {
+  padding-bottom: 120px;
+}
+
+.program > h2 {
+  padding-bottom: 64px;
+}
+
+.moviegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.films {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  width: 450px;
+}
+
+.films > h3 {
+  padding: 0 0 24px 40px;
+}
+
+#film1{
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/poster1.png);
+  background-size: cover;
+}
+#film2{
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/poster2.png);
+  background-size: cover;
+}
+#film3{
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/poster3.png);
+  background-size: cover;
+}
+#film4{
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/poster4.png);
+  background-size: cover;
+}
+
+.jurygrid {
+  padding-top: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 100px;
+  grid-column-gap: 200px;
+}
+
+.jurygrid > * {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+
+
 
 .footer {
   width: 100%;
