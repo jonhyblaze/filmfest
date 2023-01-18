@@ -1,7 +1,3 @@
-"use client"
-import { useEffect} from 'react'
-import { isBrowser } from 'next/config'
-import { useScroll } from 'scroll-behavior'
 import Image from 'next/image'
 import styles from './page.module.css'
 import Email from "../assets/logo_mail2.svg"
@@ -15,34 +11,6 @@ import Wong from "../assets/jury3.png"
 import Gus from "../assets/jury4.png"
 
 export default function Home() {
-  const isClient = isBrowser
-  
-  const { configure, scrollTo } = useScroll();
-  configure({
-    duration: 1000,
-    easing: (t) => t * t
-  })
-  
-  
-  useEffect(() => {
-    if (!isClient) {
-      return;
-    }
-    
-    const handleClick = (event) => {
-      event.preventDefault();
-      const targetId = event.target.getAttribute('href');
-      scrollTo(targetId);
-    }
-    const menuItems = document.querySelectorAll('.navItem');
-    menuItems.forEach((el) => el.addEventListener('click', handleClick));
-  
-    return () => {
-      menuItems.forEach((el) => el.removeEventListener('click', handleClick));
-    }
-   
-  }, [isClient, scrollTo])
-
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
