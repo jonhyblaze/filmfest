@@ -4,7 +4,7 @@ import Email from "../assets/logo_mail2.svg"
 import Facebook from "../assets/logo_facebook2.svg"
 import Instagram from "../assets/logo_instagram2.svg"
 import Twitter from "../assets/logo_twitter2.svg"
-import Logo from "../assets/logo.svg"
+import Navbar from '@/components/Navbar'
 import Gaspar from "../assets/jury1.png"
 import Lars from "../assets/jury2.png"
 import Wong from "../assets/jury3.png"
@@ -14,14 +14,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
-        <header className={styles.header}>
-          <Image src={Logo} alt="Logo" width={218} height={94} className={styles.logo}/>
-          <ul className={styles.nav}>
-            <li className={styles.navItem}><a className={styles.navItem} href="#program">Program</a></li>
-            <li className={styles.navItem}>Jury</li>
-            <li id={styles.submitBtn}>Submit</li>
-          </ul>
-        </header>
+        <Navbar />
         <div className={styles.title}>
           <h1>New Idaho International Film Festival</h1>
           <p>5 - 21 May 2023</p>
