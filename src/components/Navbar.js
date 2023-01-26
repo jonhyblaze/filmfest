@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './Navbar.module.css'
 import Logo from "../assets/logo.svg"
 
@@ -9,7 +10,7 @@ export default function Navbar() {
         <ul className={styles.nav}>
           <li className={styles.navItem}><a className={styles.navItem} href="#program">Program</a></li>
           <li className={styles.navItem}>Jury</li>
-          <li id={styles.submitBtn}>Submit</li>
+          <li id={styles.submitBtn}><Link href="/submit">Submit</Link></li>
         </ul>
       </header> 
     )
