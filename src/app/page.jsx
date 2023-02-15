@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
 import Navbar from '@/components/Navbar'
 import Gaspar from "../assets/jury1.png"
 import Lars from "../assets/jury2.png"

@@ -2,8 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './submit.module.css'
 import Logo from '../assets/logo.svg'
-
-
+import '../app/globals.css'
 
 export default function Submit() {
   return (
