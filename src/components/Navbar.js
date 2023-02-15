@@ -8,7 +8,7 @@ export default function Navbar() {
       <header className={styles.header}>
         <Image src={Logo} alt="Logo" width={218} height={94} className={styles.logo}/>
         <ul className={styles.nav}>
-          <li className={styles.navItem}><a className={styles.navItem} href="#program">Program</a></li>
+          <li className={styles.navItem}><a className={styles.navItemLink} href="#program">Program</a></li>
           <li className={styles.navItem}>Jury</li>
           <li id={styles.submitBtn}><Link href="/submit">Submit</Link></li>
         </ul>

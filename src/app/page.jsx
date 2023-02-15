@@ -1,14 +1,12 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Email from "../assets/logo_mail2.svg"
-import Facebook from "../assets/logo_facebook2.svg"
-import Instagram from "../assets/logo_instagram2.svg"
-import Twitter from "../assets/logo_twitter2.svg"
+
 import Navbar from '@/components/Navbar'
 import Gaspar from "../assets/jury1.png"
 import Lars from "../assets/jury2.png"
 import Wong from "../assets/jury3.png"
 import Gus from "../assets/jury4.png"
+import SocialNetLinks from '@/components/SocialNetLinks'
 
 export default function Home() {
   return (
@@ -86,12 +84,7 @@ export default function Home() {
           </section>
           <section className={styles.followUs}>
             <h2>Follow Us</h2>
-            <ul className={styles.links}>
-              <Image src={Facebook} alt="Facebook icon" />
-              <Image src={Twitter} alt="Twitter icon" />
-              <Image src={Instagram} alt="Instagram icon" />
-              <Image src={Email} alt="Email icon" />
-            </ul>
+            <SocialNetLinks />
           </section>
       </footer>
     </main>

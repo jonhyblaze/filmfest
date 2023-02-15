@@ -17,6 +17,10 @@
   width: 100%;
 }
 
+.navItem {
+  transition: all .05s ease-in;
+}
+
 #submitBtn {
   padding: 8px 24px;
   background: #121211;
@@ -33,5 +37,7 @@
 
 .navItem:hover {
   text-decoration: underline;
-    transition: all .5s ease-in;
+  text-decoration-color: white;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 6px;
 }

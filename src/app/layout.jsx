@@ -1,4 +1,11 @@
 import './globals.css'
+import { Inter } from '@next/font/google'
+
+
+const openSans = Inter ({
+  subsets: ['latin'],
+  weight: ['400', '700']
+})
 
 export default function RootLayout({ children }) {
   return (
@@ -8,7 +15,7 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className={openSans.className}>{children}</body>
     </html>
   )
 }

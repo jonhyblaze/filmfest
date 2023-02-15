@@ -118,10 +118,3 @@
   justify-content: flex-start;
   gap: 40px;
 }
-
-.links{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
-}
