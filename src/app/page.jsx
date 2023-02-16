@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.content}>
-        <div className={styles.program} id="#program">
+        <div className={styles.program} id="program">
           <h2>Program</h2>
           <div className={styles.moviegrid}>
             <div className={styles.films} id={styles.film1}>
@@ -36,7 +36,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.jury}>
+        <div className={styles.jury} id="jury">
           <h2>Jury</h2>
           <div className={styles.jurygrid}>
               <div>

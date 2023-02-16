@@ -11,7 +11,7 @@ export default function Navbar() {
         </Link>
         <ul className={styles.nav}>
           <li className={styles.navItem}><a className={styles.navItemLink} href="#program">Program</a></li>
-          <li className={styles.navItem}>Jury</li>
+          <li className={styles.navItem}><a className={styles.navItemLink} href="#jury">Jury</a></li>
           <li id={styles.submitBtn}><Link href="/submit">Submit</Link></li>
         </ul>
       </header> 

@@ -55,7 +55,6 @@
   transition: all .5s ease;
 }
 
-#goHomeBtn :hover {
-  background-color: #262624;
-  border: 1px solid #ea0c0c;
+.goHome:hover {
+  color: blue;
 }
