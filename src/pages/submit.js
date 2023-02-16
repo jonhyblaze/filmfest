@@ -4,7 +4,7 @@ import styles from './submit.module.css'
 import Logo from '../assets/logo.svg'
 import '../app/globals.css'
 
-export default function Submit() {
+export default function Submit () {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
@@ -22,7 +22,9 @@ export default function Submit() {
           <input type="text" placeholder="email" className={styles.input} />
           <input type="text" placeholder="link" className={styles.input} />
         </div>  
-        <button className={styles.submit} id={styles.submitBtn}>Submit</button>
+        <Link href="/submit-done">
+          <button className={styles.submit} id={styles.submitBtn}>Submit</button>
+        </Link>
       </div>
     </main>
   )

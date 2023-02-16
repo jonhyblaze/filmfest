@@ -1,0 +1,61 @@
+.main {
+  background: #121211;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 5rem;
+}
+
+.header {
+  display: flex;
+  padding-left: 120px;
+  padding-top: 48px;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0 auto;
+  height: 100%;
+  width: 50%;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.textOutput {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.textOutput > h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.textOutput > p {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.link {
+  cursor: auto;
+}
+
+#goHomeBtn {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 8px 24px;
+  color: #FFFFFF;
+  background-color: #121211;
+  border: 1px solid #FFFFFF;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+#goHomeBtn :hover {
+  background-color: #262624;
+  border: 1px solid #ea0c0c;
+}
